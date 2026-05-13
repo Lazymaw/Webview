@@ -31,7 +31,7 @@ jobs:
 
       - name: Build APK
         run: |
-          flet build apk my_project/main.py --android-permissions INTERNET
+          flet build apk --android-permissions INTERNET
           
       - name: Upload APK
         uses: actions/upload-artifact@v4
